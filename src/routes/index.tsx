@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import portrait from "@/assets/nandanaraj-portrait.jpg.asset.json";
+import portrait from "@/assets/nandanaraj-portrait.jpg";
 import { profile, sections, about, teaching } from "@/content/profile";
 import { Container } from "@/components/site/PageHeader";
 import { pageHead } from "@/lib/seo";
@@ -52,7 +52,7 @@ function Home() {
               <figure className="relative">
                 <div className="animate-reveal overflow-hidden rounded-sm shadow-[var(--shadow-frame)] [animation-delay:200ms]">
                   <img
-                    src={portrait.url}
+                    src={portrait}
                     alt="Portrait of NANDANARAJ R"
                     className="aspect-[4/5] w-full object-cover object-top transition-transform duration-[1.6s] hover:scale-[1.03]"
                     width={1235}

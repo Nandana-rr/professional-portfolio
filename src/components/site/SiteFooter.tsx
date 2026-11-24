@@ -2,7 +2,8 @@ import { Link, useLocation } from "@tanstack/react-router";
 import { sections, profile } from "@/content/profile";
 
 export function SiteFooter() {
-  const { pathname } = useLocation();
+  // Static hosts such as GitHub Pages add a trailing slash to page addresses.
+  const pathname = useLocation().pathname.replace(/(.)\/+$/, "$1");
   const idx = sections.findIndex((s) => s.to === pathname);
   const next = idx === -1 ? sections[0] : sections[(idx + 1) % sections.length];
   const nextNumber = idx === -1 ? 1 : ((idx + 1) % sections.length) + 1;

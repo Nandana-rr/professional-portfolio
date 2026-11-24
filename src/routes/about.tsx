@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import portrait from "@/assets/nandanaraj-portrait.jpg.asset.json";
+import portrait from "@/assets/nandanaraj-portrait.jpg";
 import { about, profile } from "@/content/profile";
 import { Container, PageHeader, Placeholder } from "@/components/site/PageHeader";
 import { pageHead } from "@/lib/seo";
@@ -29,7 +29,7 @@ function AboutPage() {
         <div className="md:col-span-4">
           <div className="sticky top-24">
             <img
-              src={portrait.url}
+              src={portrait}
               alt="NANDANARAJ R"
               className="aspect-square w-full max-w-xs rounded-sm object-cover object-top grayscale transition-all duration-1000 hover:grayscale-0"
               loading="lazy"

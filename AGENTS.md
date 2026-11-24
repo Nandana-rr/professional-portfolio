@@ -32,3 +32,5 @@ use the editor.
 ## Project rules
 - All portfolio text lives in `src/content/profile.ts`; pages only render it. Why: the owner edits one file to update the site, and `null` values render as visible placeholders instead of invented facts.
 - Each portfolio section is its own route; `sections` in profile.ts drives the menu, home contents and "next" links. Why: one list keeps navigation consistent.
+- The site must stay fully static: no server functions, server routes or backend. Why: it is hosted on GitHub Pages, which only serves files; `.github/workflows/deploy.yml` builds with `GITHUB_PAGES=true`, which prerenders every route and prefixes links with the repository path.
+- Import images as bundled files from `src/assets` and build root-relative URLs from `import.meta.env.BASE_URL`. Why: `/__l5e/...` asset pointers and hardcoded `/` paths break under the GitHub Pages repository sub-path.

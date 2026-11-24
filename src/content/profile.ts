@@ -46,18 +46,21 @@ export const education = [
     institution: "College of Engineering and Management, Punnapra",
     university: "APJ Abdul Kalam Technological University",
     year: "2026",
+    status: "Completed",
   },
   {
     degree: "B.Tech in Computer Science and Engineering",
     institution: "College of Engineering and Management, Punnapra",
     university: "APJ Abdul Kalam Technological University",
     year: "2024",
+    status: "Completed",
   },
   {
     degree: "Diploma in Computer Engineering",
     institution: "Carmel Polytechnic College, Alappuzha",
     university: null as string | null,
     year: "2021",
+    status: "Completed",
   },
 ];
 

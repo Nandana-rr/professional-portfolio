@@ -31,6 +31,8 @@ jobs:
           GITHUB_PAGES: "true"
           # "/<repository-name>" for a project site, empty for <user>.github.io
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # "https://<user>.github.io" — gives link previews a full image address
+          VITE_SITE_ORIGIN: ${{ steps.pages.outputs.origin }}
       - run: touch dist/client/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

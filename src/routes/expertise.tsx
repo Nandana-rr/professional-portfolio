@@ -7,7 +7,7 @@ export const Route = createFileRoute("/expertise")({
   head: () =>
     pageHead(
       "Technical Expertise",
-      "Technical expertise of Nandanaraj R — Python, Java, C, MySQL, Machine Learning, Data Science, NLP, DBMS, Git and GitHub.",
+      "Technical expertise of NANDANARAJ R — Python, Java, C, MySQL, Machine Learning, Data Science, NLP, DBMS, Git and GitHub.",
     ),
   component: ExpertisePage,
 });

@@ -32,4 +32,3 @@ use the editor.
 ## Project rules
 - All portfolio text lives in `src/content/profile.ts`; pages only render it. Why: the owner edits one file to update the site, and `null` values render as visible placeholders instead of invented facts.
 - Each portfolio section is its own route; `sections` in profile.ts drives the menu, home contents and "next" links. Why: one list keeps navigation consistent.
-- The CV is a static file in `public/downloads/`. Why: same-origin download works and stays portable for static hosting.

@@ -7,7 +7,7 @@ export const Route = createFileRoute("/teaching")({
   head: () =>
     pageHead(
       "Teaching Portfolio",
-      "Courses taught by Nandanaraj R — Natural Language Processing (CST473), Data Analytics Laboratory and Python and Statistical Modeling Laboratory.",
+      "Courses taught by NANDANARAJ R — Natural Language Processing (CST473), Data Analytics Laboratory and Python and Statistical Modeling Laboratory.",
     ),
   component: TeachingPage,
 });

@@ -1,7 +1,7 @@
-const SITE = "Nandanaraj R — Academic Portfolio";
+const SITE = "NANDANARAJ R — Academic Portfolio";
 
 export function pageHead(title: string, description: string) {
-  const full = title ? `${title} · Nandanaraj R` : SITE;
+  const full = title ? `${title} · NANDANARAJ R` : SITE;
   return {
     meta: [
       { title: full },

@@ -80,13 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nandanaraj R — Academic Portfolio" },
+      { title: "NANDANARAJ R — Academic Portfolio" },
       {
         name: "description",
         content:
-          "Academic portfolio of Nandanaraj R, Assistant Professor of Computer Science and Engineering, IHRD College of Engineering, Cherthala.",
+          "Academic portfolio of NANDANARAJ R, Assistant Professor of Computer Science and Engineering, College of Engineering Cherthala - IHRD.",
       },
-      { name: "author", content: "Nandanaraj R" },
+      { name: "author", content: "NANDANARAJ R" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

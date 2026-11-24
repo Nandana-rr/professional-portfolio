@@ -1,14 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { profile } from "@/content/profile";
 import { Container, PageHeader } from "@/components/site/PageHeader";
-import { CvCard } from "@/components/site/CvCard";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
   head: () =>
     pageHead(
       "Contact",
-      "Contact Nandanaraj R by email, phone, LinkedIn or GitHub, and download the academic CV.",
+      "Contact NANDANARAJ R by email, phone, LinkedIn or GitHub.",
     ),
   component: ContactPage,
 });
@@ -59,9 +58,6 @@ function ContactPage() {
         <p className="mt-6 text-sm text-muted-foreground">
           {profile.department}, {profile.institution}, Kerala.
         </p>
-        <div className="mt-20">
-          <CvCard />
-        </div>
       </Container>
     </>
   );

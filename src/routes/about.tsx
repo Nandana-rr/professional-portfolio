@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
   head: () =>
     pageHead(
       "About Me",
-      "Academic background and professional interests of Nandanaraj R — Machine Learning, NLP, Explainable AI and Database Systems.",
+      "Academic background and professional interests of NANDANARAJ R — Machine Learning, NLP, Explainable AI and Database Systems.",
     ),
   component: AboutPage,
 });
@@ -30,7 +30,7 @@ function AboutPage() {
           <div className="sticky top-24">
             <img
               src={portrait.url}
-              alt="Nandanaraj R"
+              alt="NANDANARAJ R"
               className="aspect-square w-full max-w-xs rounded-sm object-cover object-top grayscale transition-all duration-1000 hover:grayscale-0"
               loading="lazy"
             />

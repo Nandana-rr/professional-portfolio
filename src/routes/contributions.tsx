@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contributions")({
   head: () =>
     pageHead(
       "Academic Contributions",
-      "Academic contributions of Nandanaraj R — Hacktoberfest (3 editions), open-source work, FDP activities and technical seminars.",
+      "Academic contributions of NANDANARAJ R — Hacktoberfest (3 editions), open-source work, FDP activities and technical seminars.",
     ),
   component: ContributionsPage,
 });

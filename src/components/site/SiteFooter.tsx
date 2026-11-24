@@ -56,14 +56,7 @@ export function SiteFooter() {
           </li>
         </ul>
         <div className="md:text-right">
-          <a
-            href={profile.cvUrl}
-            download={profile.cvFileName}
-            className="link-underline text-sage"
-          >
-            Download academic CV ↓
-          </a>
-          <p className="mt-2 text-ink-foreground/40">© {new Date().getFullYear()} {profile.name}</p>
+          <p className="text-ink-foreground/40">© {new Date().getFullYear()} {profile.name}</p>
         </div>
       </div>
     </footer>

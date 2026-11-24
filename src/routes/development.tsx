@@ -7,7 +7,7 @@ export const Route = createFileRoute("/development")({
   head: () =>
     pageHead(
       "Professional Development",
-      "Professional development of Nandanaraj R — NPTEL Data Science certification and Data Science & Machine Learning training at Camerin Group, Kochi.",
+      "Professional development of NANDANARAJ R — NPTEL Data Science certification and Data Science & Machine Learning training at Camerin Group, Kochi.",
     ),
   component: DevelopmentPage,
 });

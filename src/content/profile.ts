@@ -4,17 +4,15 @@
  */
 
 export const profile = {
-  name: "Nandanaraj R",
-  firstName: "Nandanaraj",
+  name: "NANDANARAJ R",
+  firstName: "NANDANARAJ",
   lastName: "R",
   designation: "Assistant Professor",
   department: "Department of Computer Science and Engineering",
-  institution: "IHRD College of Engineering, Cherthala",
+  institution: "College of Engineering Cherthala - IHRD",
   location: "Alappuzha, Kerala",
   intro:
     "Computer Science educator with an M.Tech in Computer Science and Engineering and a strong foundation in Machine Learning, Natural Language Processing, Database Management Systems and programming. Passionate about teaching, mentoring students and contributing to academic excellence.",
-  cvUrl: "/downloads/Nandanaraj-R-Academic-CV.pdf",
-  cvFileName: "Nandanaraj-R-Academic-CV.pdf",
   contact: {
     email: "rajrnandana@gmail.com",
     phone: "+91 7909133465",
@@ -77,14 +75,14 @@ export const teaching = [
   {
     code: null as string | null,
     title: "Data Analytics Laboratory",
-    role: "Substitute faculty",
+    role: "Lab handled",
     cohort: "S5 AI & DS",
     note: "Hands-on data analysis and visualisation practice.",
   },
   {
     code: null as string | null,
     title: "Python and Statistical Modeling Laboratory",
-    role: "Substitute faculty",
+    role: "Lab handled",
     cohort: "S3 AI & DS",
     note: "Python programming applied to statistical modelling.",
   },

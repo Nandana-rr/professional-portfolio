@@ -7,7 +7,7 @@ export const Route = createFileRoute("/research")({
   head: () =>
     pageHead(
       "Research & Projects",
-      "Explainable Hybrid Fake News Detection using Machine Learning and BERT — academic research project by Nandanaraj R.",
+      "Explainable Hybrid Fake News Detection using Machine Learning and BERT — academic research project by NANDANARAJ R.",
     ),
   component: ResearchPage,
 });

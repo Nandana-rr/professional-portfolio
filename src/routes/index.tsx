@@ -2,14 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import portrait from "@/assets/nandanaraj-portrait.jpg.asset.json";
 import { profile, sections, about, teaching } from "@/content/profile";
 import { Container } from "@/components/site/PageHeader";
-import { CvCard } from "@/components/site/CvCard";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead(
       "",
-      "Nandanaraj R — Assistant Professor, Department of Computer Science and Engineering, IHRD College of Engineering, Cherthala. Teaching NLP, data analytics and machine learning.",
+      "NANDANARAJ R — Assistant Professor, Department of Computer Science and Engineering, College of Engineering Cherthala - IHRD. Teaching NLP, data analytics and machine learning.",
     ),
   component: Home,
 });
@@ -25,10 +24,10 @@ function Home() {
               <p className="eyebrow animate-rise text-sage-deep">
                 Portfolio · Vol. 01 — {profile.location}
               </p>
-              <h1 className="mt-6 text-[clamp(3.5rem,11vw,9.5rem)] leading-[0.86] font-light tracking-[-0.04em]">
-                <span className="animate-rise block [animation-delay:80ms]">Nandana</span>
+              <h1 className="mt-6 text-[clamp(3rem,9vw,7.5rem)] leading-[0.9] font-light tracking-[-0.04em]">
+                <span className="animate-rise block [animation-delay:80ms]">NANDANA</span>
                 <span className="animate-rise block [animation-delay:160ms]">
-                  <em className="font-normal text-sage-deep">raj</em> R.
+                  <em className="font-normal text-sage-deep">RAJ</em> R.
                 </span>
               </h1>
               <div className="animate-rise mt-10 grid gap-6 border-t border-foreground/80 pt-6 [animation-delay:260ms] sm:grid-cols-2">
@@ -54,7 +53,7 @@ function Home() {
                 <div className="animate-reveal overflow-hidden rounded-sm shadow-[var(--shadow-frame)] [animation-delay:200ms]">
                   <img
                     src={portrait.url}
-                    alt="Portrait of Nandanaraj R"
+                    alt="Portrait of NANDANARAJ R"
                     className="aspect-[4/5] w-full object-cover object-top transition-transform duration-[1.6s] hover:scale-[1.03]"
                     width={1235}
                     height={1274}
@@ -82,13 +81,6 @@ function Home() {
               {profile.intro.slice(1)}
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
-              <a
-                href={profile.cvUrl}
-                download={profile.cvFileName}
-                className="inline-flex items-center gap-3 rounded-full bg-ink px-6 py-3 text-sm text-ink-foreground transition-all duration-500 hover:gap-5 hover:bg-sage-deep"
-              >
-                Download CV <span aria-hidden>↓</span>
-              </a>
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-3 rounded-full border border-foreground px-6 py-3 text-sm transition-colors hover:bg-foreground hover:text-background"
@@ -160,13 +152,6 @@ function Home() {
               </li>
             ))}
           </ol>
-        </Container>
-      </section>
-
-      {/* CV */}
-      <section id="cv">
-        <Container>
-          <CvCard />
         </Container>
       </section>
     </>

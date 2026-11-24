@@ -7,7 +7,7 @@ export const Route = createFileRoute("/education")({
   head: () =>
     pageHead(
       "Education",
-      "Education of Nandanaraj R — M.Tech and B.Tech in Computer Science and Engineering (APJ Abdul Kalam Technological University) and Diploma in Computer Engineering.",
+      "Education of NANDANARAJ R — M.Tech and B.Tech in Computer Science and Engineering (APJ Abdul Kalam Technological University) and Diploma in Computer Engineering.",
     ),
   component: EducationPage,
 });

@@ -37,16 +37,11 @@ function EducationPage() {
                   {e.year}
                 </p>
               </div>
-              <div className="md:col-span-6">
+              <div className="md:col-span-9">
                 <p className="eyebrow text-muted-foreground">{String(i + 1).padStart(2, "0")} / {String(education.length).padStart(2, "0")}</p>
                 <h2 className="mt-3 text-3xl leading-tight font-normal md:text-4xl">{e.degree}</h2>
                 <p className="mt-3 text-muted-foreground">{e.institution}</p>
                 {e.university && <p className="text-muted-foreground">{e.university}</p>}
-              </div>
-              <div className="md:col-span-3 md:text-right">
-                <span className="inline-block rounded-full bg-sage-soft px-4 py-2 font-mono text-xs text-sage-deep">
-                  {e.score}
-                </span>
               </div>
             </li>
           ))}

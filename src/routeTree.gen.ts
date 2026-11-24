@@ -10,33 +10,141 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ContributionsRouteImport } from './routes/contributions'
+import { Route as DevelopmentRouteImport } from './routes/development'
+import { Route as EducationRouteImport } from './routes/education'
+import { Route as ExpertiseRouteImport } from './routes/expertise'
+import { Route as ResearchRouteImport } from './routes/research'
+import { Route as TeachingRouteImport } from './routes/teaching'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContributionsRoute = ContributionsRouteImport.update({
+  id: '/contributions',
+  path: '/contributions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DevelopmentRoute = DevelopmentRouteImport.update({
+  id: '/development',
+  path: '/development',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EducationRoute = EducationRouteImport.update({
+  id: '/education',
+  path: '/education',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExpertiseRoute = ExpertiseRouteImport.update({
+  id: '/expertise',
+  path: '/expertise',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResearchRoute = ResearchRouteImport.update({
+  id: '/research',
+  path: '/research',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeachingRoute = TeachingRouteImport.update({
+  id: '/teaching',
+  path: '/teaching',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/contributions': typeof ContributionsRoute
+  '/development': typeof DevelopmentRoute
+  '/education': typeof EducationRoute
+  '/expertise': typeof ExpertiseRoute
+  '/research': typeof ResearchRoute
+  '/teaching': typeof TeachingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/contributions': typeof ContributionsRoute
+  '/development': typeof DevelopmentRoute
+  '/education': typeof EducationRoute
+  '/expertise': typeof ExpertiseRoute
+  '/research': typeof ResearchRoute
+  '/teaching': typeof TeachingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/contributions': typeof ContributionsRoute
+  '/development': typeof DevelopmentRoute
+  '/education': typeof EducationRoute
+  '/expertise': typeof ExpertiseRoute
+  '/research': typeof ResearchRoute
+  '/teaching': typeof TeachingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/contributions'
+    | '/development'
+    | '/education'
+    | '/expertise'
+    | '/research'
+    | '/teaching'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/contributions'
+    | '/development'
+    | '/education'
+    | '/expertise'
+    | '/research'
+    | '/teaching'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/contributions'
+    | '/development'
+    | '/education'
+    | '/expertise'
+    | '/research'
+    | '/teaching'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  ContributionsRoute: typeof ContributionsRoute
+  DevelopmentRoute: typeof DevelopmentRoute
+  EducationRoute: typeof EducationRoute
+  ExpertiseRoute: typeof ExpertiseRoute
+  ResearchRoute: typeof ResearchRoute
+  TeachingRoute: typeof TeachingRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +156,75 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contributions': {
+      id: '/contributions'
+      path: '/contributions'
+      fullPath: '/contributions'
+      preLoaderRoute: typeof ContributionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/development': {
+      id: '/development'
+      path: '/development'
+      fullPath: '/development'
+      preLoaderRoute: typeof DevelopmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/education': {
+      id: '/education'
+      path: '/education'
+      fullPath: '/education'
+      preLoaderRoute: typeof EducationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/expertise': {
+      id: '/expertise'
+      path: '/expertise'
+      fullPath: '/expertise'
+      preLoaderRoute: typeof ExpertiseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research': {
+      id: '/research'
+      path: '/research'
+      fullPath: '/research'
+      preLoaderRoute: typeof ResearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/teaching': {
+      id: '/teaching'
+      path: '/teaching'
+      fullPath: '/teaching'
+      preLoaderRoute: typeof TeachingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  ContributionsRoute: ContributionsRoute,
+  DevelopmentRoute: DevelopmentRoute,
+  EducationRoute: EducationRoute,
+  ExpertiseRoute: ExpertiseRoute,
+  ResearchRoute: ResearchRoute,
+  TeachingRoute: TeachingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
